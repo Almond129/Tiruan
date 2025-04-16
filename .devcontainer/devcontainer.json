@@ -1,12 +1,12 @@
 {
-  "name": "Ubuntu 24.04 DevContainer",
+  "name": "Ubuntu 22.04 Dev",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+    "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "postCreateCommand": "sudo apt update && sudo apt install -y libssl3",
   "features": {},
-  "remoteUser": "vscode"
+  "postCreateCommand": "echo 'Welcome to Ubuntu 22.04 environment!'",
+  "remoteUser": "root"
 }
