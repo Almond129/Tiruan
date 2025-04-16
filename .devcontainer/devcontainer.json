@@ -1,10 +1,11 @@
 {
-  "name": "Ubuntu 22.04 with root access",
-  "build": {
-    "dockerfile": "Dockerfile"
+  "name": "Ubuntu 22.04 Root Dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
   },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
+  "postCreateCommand": "chmod +x .devcontainer/setup.sh && sudo bash .devcontainer/setup.sh",
   "remoteUser": "root"
 }
