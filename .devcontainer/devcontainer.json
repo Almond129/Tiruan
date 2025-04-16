@@ -1,0 +1,12 @@
+{
+  "name": "Ubuntu 24.04 DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y libssl3",
+  "features": {},
+  "remoteUser": "vscode"
+}
