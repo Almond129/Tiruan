@@ -1,5 +1,5 @@
 {
-  "name": "Ubuntu 22.04 Root Dev",
+  "name": "Root Ubuntu 22.04 Codespace",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
